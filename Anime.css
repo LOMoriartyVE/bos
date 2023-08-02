@@ -191,7 +191,7 @@
         height: 240px;
         background: red;
         border-radius: 15px;
-        background: url(/Slime.jpg);
+        background: url(Slime.jpg);
         background-size: cover;
         
     }
