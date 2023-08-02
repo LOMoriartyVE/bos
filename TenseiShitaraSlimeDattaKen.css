@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+
+}
+a:link{
+    text-decoration: none!important;
+  }
+.logo{
+    text-decoration: none;
+    color: #f6f4e5;
+    text-transform: uppercase;
+    font: 700;
+    font-size: 1.8em;
+    transition: all 0.5s ease;
+}
+.logo:hover{
+    color: #661d1d ;
+    transform: scale(1.5);
+}
+.nev a{
+    color: #f6f4e5  ;
+    padding: 6px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 700;
+    font-size: 1.2em;
+    transition: all 0.5s ;
+}
+.nev a:hover{
+    color: #661d1d;
+    transform: scale(1.3);
+}
+header{
+    background-color: #241404;
+    background-blend-mode:screen;
+    width: 100%; 
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    z-index: 30000;}
+svg{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        z-index: 500;
+    
+    }
+circle{
+    
+    fill: none;
+    stroke: #241404;
+    stroke-width: 6;
+    transform: translate(3px,3px);
+    stroke-dasharray:251;
+    stroke-dashoffset:251;
+    }
+.track{
+    stroke: #241404;
+    fill: none;
+    stroke-dashoffset: 0;}
+.progressDAA{
+    fill: none;
+    stroke:#661d1d;
+    animation-name: DAA;
+    animation-duration: 5s;
+    stroke-dashoffset:calc(251 - (251 * 85) / 100);
+}
+.progresscha{
+    fill: none;
+    stroke:#661d1d;
+    animation-name: cha;
+    animation-duration: 5s;
+    stroke-dashoffset: calc(251 - (251 * 74) / 100);
+}
+.progresss{
+    fill: none;
+    stroke:#661d1d;
+    animation-name: s;
+    animation-duration: 5s;
+
+    stroke-dashoffset: calc(251 - (251 * 76) / 100);
+}
+.progresso{
+    fill: none;
+    stroke:#661d1d;
+    animation-name: so;
+    animation-duration: 5s;
+    stroke-dashoffset: calc(251 - (251 * 77) / 100);
+}
+.progress_s{
+    fill: none;
+    stroke:#661d1d;
+    animation-name: s_s;
+    animation-duration: 5s;
+    stroke-dashoffset: calc(251 - (251 * 78) / 100);
+}
+
+@keyframes DAA{
+from{stroke-dashoffset: 251;}
+to{stroke-dashoffset:(251 - (251 * 85) / 100);}
+}
+@keyframes cha{
+    from{stroke-dashoffset: 251;}
+    to{stroke-dashoffset: (251 - (251 * 74) / 100) ;}
+}
+@keyframes s{
+    from{stroke-dashoffset: 251;}
+    to{stroke-dashoffset: (251 - (251 * 76) / 100) ;}
+}
+@keyframes so{
+    from{stroke-dashoffset: 251;}
+    to{stroke-dashoffset: (251 - (251 * 77) / 100) ;}
+}
+@keyframes s_s{
+    from{stroke-dashoffset: 251;}
+    to{stroke-dashoffset: (251 - (251 * 78) / 100) ;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar{
+    width: 10px;
+    }
+    ::-webkit-scrollbar-thumb{
+     background: #661d1d;
+    }
+    ::-webkit-scrollbar-track{
+    background: #fff;
+    }
+    ::-webkit-scrollbar-track:hover{
+        background: #f6f4e5;
+    }
+.section_1{
+
+    width: 100%;
+    min-height: 1100px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #beb49f;
+    
+}
+
+.content_1{
+    margin-top: 10px;
+    position: relative;
+    height:800px;
+    width: 1600px;
+    background-color: #8c8474;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    z-index: 0;
+}
+.section_1 .content_1 .content_1_nev{
+    position: relative;
+    height: 100%;
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*start of img and discription*/
+.section_1 .content_1 .content_1_nev .imgbx{
+    height: 340px ;
+    width: 100%;
+    background: url(/Tensei\ Shitara\ Slime\ Datta\ Ken.jpg);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #beb49f;
+    background-size: cover;
+    transition: all 0.5s;
+}
+.section_1 .content_1 .content_1_nev .anime_discription{
+    position: relative;
+    height: 400px ;
+    width: 100%;
+    background-color: #8c8474;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #beb49f;
+    transition: all 0.5s;
+    padding: 10px;
+    margin-right: 20px;
+    
+}
+.section_1 .content_1 .content_1_nev .anime_discription pre{
+    color: #661d1d;
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+}
+.section_1 .content_1 .content_1_nev .anime_discription:hover{
+    transform: scale(1.06);
+    border-color: #e8b953;
+    z-index: 7;
+}/*end of img and discription*/
+.section_1 .content_1 .content_1_nev .imgbx:hover{
+    transform: scale(1.06);
+    z-index: 7;
+    border-color: #e8b953;
+}
+.section_1_header{
+    transform: translate(20px,-20px);
+    position: relative;
+    width: 66%;
+    padding: 20px;
+    height: auto;
+    display: flex;
+    background-color: #8c8474;
+    justify-content: space-between ;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+
+.section_1 .content_1 .section_1_header .section_1_cards_content{
+    position: relative;
+    width: 100%;
+    height:auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    border-color: #beb49f;
+    border-style: solid;
+    overflow: hidden;
+    transition: 0.5s;
+    
+    
+}
+.section_1_cards_content:hover{
+transform: translateY(-10px);
+border-color: #e8b953;
+box-shadow: 0 15px 35px rgba(0,0,0, .5);
+}
+.section_1_cards_content .card{
+    position: relative;
+    width: 200px;
+    background: #8c8474;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 300px;
+    text-align: center;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    border-style: solid;
+    border-color: #beb49f;
+    margin-top: 5px;
+    margin-left: 5px;
+    
+}
+.section_1_cards_content .card:hover{
+transform: translateY(-10px);
+border-color: #e8b953;
+box-shadow: 0 15px 35px rgba(0,0,0, .5);}
+
+/* half shadow*/
+.section_1_cards_content .card::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background:  rgba(155,255,255,.03);
+    z-index: 1;
+}
+.percent{
+    position: relative;
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    background: #222;
+    z-index: 998;
+}
+.percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+.percent .number h2{
+    color: #beb49f;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.5s;
+
+}
+.percent .number h2 span{
+    font-size: 20px;
+    color: #777;
+}
+
+
+.card:hover .percent .number h2{
+    color: #e8b953;
+    font-size: 35px;
+}
+
+.card:hover .percent .number h2 span
+{
+    color: #e8b953;
+    transition: 0.5s;
+
+}
+.text{
+    position: relative;
+    color: #beb49f;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.card:hover .text_Drawing_and_animation{
+
+
+
+color: #e8b953;
+}
+.card:hover .text_characters{
+
+
+
+    color: #e8b953;
+}
+.card:hover .text_story{
+
+
+
+        color: #e8b953;
+}
+.card:hover .text_osts{
+
+
+
+            color: #e8b953;
+}
+
+.text_Drawing_and_animation{
+    position: relative;
+    color: #beb49f;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transform: translateY(6px);
+}
+.text_characters{
+    position: relative;
+    color: #beb49f;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.text_story{
+    position: relative;
+    color: #beb49f;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.text_osts{
+    position: relative;
+    color: #beb49f;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+
+.percent_Drawing_and_animation{
+    position: relative;
+    width: 86px;
+    height: 86px;
+    transform: translate(52px,9px);
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    background: #222;
+    z-index: 998;
+}
+.percent_Drawing_and_animation .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+.percent_Drawing_and_animation .number h2{
+    color: #beb49f;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.5s;
+
+}
+.percent_Drawing_and_animation .number h2 span{
+    font-size: 24px;
+    color: #777;
+}
+.card:hover .percent_Drawing_and_animation .number h2{
+    color: #e8b953;
+    font-size: 35px;
+}
+.card:hover .percent_Drawing_and_animation .number h2 span{
+    color: #e8b953;
+    transition: 0.5s;
+
+}
+
+.percent_characters{
+    position: relative;
+    width: 86px;
+    height: 86px;
+    transform: translateX(24px);
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    background: #222;
+    z-index: 998;
+}
+.percent_characters .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+.percent_characters .number h2{
+    color: #beb49f;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.5s;
+
+}
+.percent_characters .number h2 span{
+    font-size: 24px;
+    color: #777;
+}
+.card:hover .percent_characters .number h2{
+    color: #e8b953;
+    font-size: 35px;
+}
+.card:hover .percent_characters .number h2 span{
+    color: #e8b953;
+    transition: 0.5s;
+
+}
+
+.section_1_cards_content .card_s{
+    position: relative;
+    width: 100%;
+    background: #8c8474;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 150px;
+    text-align: center;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    border-style: solid;
+    border-color: #beb49f;
+    margin-top: 5px;
+    margin-left: 5px;
+    
+}
+.section_1_cards_content .card_s:hover{
+
+    transform: translateY(-10px);
+    border-color: #e8b953;
+    box-shadow: 0 15px 35px rgba(0,0,0, .5);
+}
+.section_1_cards_content .card_s::before{
+        content: '';
+        position:absolute;
+        top: 0;
+        left: -50%;
+        width: 100%;
+        height: 100%;
+        background:  rgba(155,255,255,.03);
+        z-index: 1;
+}
+.percent_s{
+    position: relative;
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    background: #222;
+    z-index: 998;
+}
+.percent_s .number_s{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+.percent_s .number_s h2{
+    color: #beb49f;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.5s;
+
+}
+.percent_s .number_s h2 span{
+    font-size: 20px;
+    color: #777;
+}
+
+.card_s:hover .percent_s .number_s h2{
+    color: #e8b953;
+    font-size: 35px;
+}
+
+.card_s:hover .percent_s .number_s h2 span
+{
+    color: #e8b953;
+    transition: 0.5s;
+
+}
+.text_s{
+    position: relative;
+    color: #beb49f;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.card_s:hover .text_s{
+    color: #e8b953;
+}
+
+
+.header_footer{
+    height: auto;
+    width: 100%;
+    background-color: #8c8474;
+    padding: 20px;
+    display: flex;
+    flex-grow: 0.5;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    border-color: #beb49f;
+    border-style: solid;
+    justify-content: space-between;
+    flex-direction: row;
+    transition: 0.5s;
+}
+.header_footer:hover{
+    transform: translateY(-10px);       
+    box-shadow: 0 15px 35px rgba(0,0,0, .5);
+    border-color: #e8b953;
+}
+
+.rank_div{
+   
+    display: flex;
+    height: 100%;
+    width: 400px;
+    padding: 20px;
+    background-color: #8c8474;
+    border-radius: 8px;
+    border-color: #beb49f;
+    border-style: solid;
+    justify-content: center;
+    align-items: center;
+    text-decoration-color:#8c8474;
+    transition: 0.5s;
+}
+.header_footer h2{
+    color: #beb49f;
+    transition: 0.5s;
+}
+.links_div{
+    display: flex;
+    height: 210px;
+    width: 400px;
+    padding: 20px;
+    background-color: #8c8474;
+    border-radius: 8px;
+    border-color: #beb49f;
+    border-style: solid;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+    text-decoration-color:#8c8474;
+    
+}
+
+.rank_div:hover{
+    transform: translateY(-10px);
+    border-color: #e8b953;
+    box-shadow: 0 15px 35px rgba(0,0,0, .5);
+}
+
+.links_div:hover{
+    transform: translateY(-10px);
+    border-color: #e8b953;
+    box-shadow: 0 15px 35px rgba(0,0,0, .5);
+    text-decoration: none;
+}
+.rank_div:hover h2{
+    color: #e8b953;
+}
+.links_div h2{
+    transform: translateY(-10px);
+}
+.links_div:hover h2{
+    color: #e8b953;
+}
+.links_div:hover .links_inside_div{
+    border-color: #e8b953;
+    transform: scale(1.05);
+
+}
+.links_inside_div{
+    width: 350px;
+    height: 1000px;
+    background-color: #8c8474;
+    border-radius: 8px;
+    border-color: #beb49f;
+    border-style: solid;
+    display: flex;
+    margin-top: 5px;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.links_inside_div div{
+    width: 280px;
+    height: 200px;
+    background-color: #8c8474;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 4px;
+    border-color: #beb49f;
+    border-style: solid;
+    transition: 0.5s;
+}
+.link_div:hover {
+    border-color: #e8b953;
+    transform: scale(1.05);
+}
+.link_div a{
+text-decoration: none;
+color: #beb49f;
+transition: 0.5s;
+}
+.links_div:hover a{
+    color: #e8b953;
+}
